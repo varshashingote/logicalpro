@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C94960FD-7489-4DEE-90AB-399516A847D7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LogicalProgrampracties</RootNamespace>
+    <AssemblyName>LogicalProgrampracties</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayLogicalProgram\CopyArray.cs" />
+    <Compile Include="ArrayLogicalProgram\FindDuplicateArray.cs" />
+    <Compile Include="ArrayLogicalProgram\FrequencyofElement.cs" />
+    <Compile Include="ArrayLogicalProgram\MinMaxNo.cs" />
+    <Compile Include="ArrayLogicalProgram\OddEvenElement.cs" />
+    <Compile Include="ArrayLogicalProgram\RemoveDuplicate.cs" />
+    <Compile Include="ArrayLogicalProgram\SortingArrayElement.cs" />
+    <Compile Include="Collection\AddressBook.cs" />
+    <Compile Include="Collection\Contacts.cs" />
+    <Compile Include="Collection\Dictionary11.cs" />
+    <Compile Include="Collection\EmpAddressBook.cs" />
+    <Compile Include="Collection\EmpBook.cs" />
+    <Compile Include="Collection\Frequencyofcharindictionary.cs" />
+    <Compile Include="Collection\Hashset.cs" />
+    <Compile Include="Collection\LinkedListCollectio.cs" />
+    <Compile Include="Collection\FindDuplicate.cs" />
+    <Compile Include="Collection\FoundNoinArray.cs" />
+    <Compile Include="Collection\StackMinMax.cs" />
+    <Compile Include="Collection\SortedList.cs" />
+    <Compile Include="Collection\Student.cs" />
+    <Compile Include="LinkedList\LinkedListMethod.cs" />
+    <Compile Include="LinkedList\Node.cs" />
+    <Compile Include="NumberProblem\AmstrongNo.cs" />
+    <Compile Include="ArrayLogicalProgram\EvenOddArrayElement.cs" />
+    <Compile Include="ArrayLogicalProgram\SumArrayElement.cs" />
+    <Compile Include="NumberProblem\BinaryToDecimal.cs" />
+    <Compile Include="NumberProblem\FactorialNumber.cs" />
+    <Compile Include="NumberProblem\FibonaacciSeriresTriangle.cs" />
+    <Compile Include="NumberProblem\FibonacciSeries.cs" />
+    <Compile Include="NumberProblem\PalindromeNumber.cs" />
+    <Compile Include="NumberProblem\PerfectNumber.cs" />
+    <Compile Include="NumberProblem\PrimeNumber.cs" />
+    <Compile Include="Pattern\Pattern1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NumberProblem\revserseNumber.cs" />
+    <Compile Include="NumberProblem\SumOfDigit.cs" />
+    <Compile Include="NumberProblem\SwapTwoNumberWithoutthirdvariable.cs" />
+    <Compile Include="Queue\Node.cs" />
+    <Compile Include="Queue\QueueMethod.cs" />
+    <Compile Include="SortingAlgorithm\BubbleSort.cs" />
+    <Compile Include="SortingAlgorithm\SelectionSort.cs" />
+    <Compile Include="Stack\Node.cs" />
+    <Compile Include="Stack\StackMethod.cs" />
+    <Compile Include="StringLogicalProgram\Countword.cs" />
+    <Compile Include="StringLogicalProgram\FindDuplicateElement.cs" />
+    <Compile Include="StringLogicalProgram\findSpecialChar.cs" />
+    <Compile Include="StringLogicalProgram\RemoveDuplicateinstring.cs" />
+    <Compile Include="StringLogicalProgram\RemoveSpecialChar.cs" />
+    <Compile Include="StringLogicalProgram\SeprateIndiviualCharacter.cs" />
+    <Compile Include="StringLogicalProgram\SortStringInAlphabiticalOrder.cs" />
+    <Compile Include="StringLogicalProgram\StringPalindrom.cs" />
+    <Compile Include="StringLogicalProgram\StringReverse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
